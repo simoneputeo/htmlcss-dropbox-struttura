@@ -4,7 +4,9 @@
   padding: 0;
 }
 
-
+a {
+  text-decoration: none;
+}
 
 .page-header {
   height: 500px;
@@ -12,50 +14,152 @@
   border: 2px dashed green;
 }
 
-.row
-{display: flex;
+.row {
+  display: flex;
+}
+
+.img-fluid {
+  max-width: calc(100% / 3);
+}
+
+.contactus {
+  padding: 12px;
+  padding-left: 90px;
+  padding-right: 90px;
+  background-color: cornflowerblue;
+  width: fit-content;
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.contactsales .a {
+  text-decoration: none;
+}
+.contactsales {
+  padding: 12px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: cornflowerblue;
+  width: fit-content;
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.user-card {
+  padding: 10px;
+  border: 1px solid grey;
+  text-align: center;
+}
+.title-card {
+  padding: 10px;
+  border: 1px solid grey;
+  text-align: center;
+}
+
+.big-card {
+  padding: 30px;
+  border: 1px solid grey;
+}
+
+.upper-card {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 2px solid grey;
+}
+.lower-card {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 2px solid grey;
+}
+.card-name {
+  font-size: 1.7rem;
+  font-weight: 600;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.card-price {
+  font-weight: 600;
+}
+
+.freetrial {
+  padding: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: cornflowerblue;
+  width: fit-content;
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.arrow {
+  padding-top: 20px;
+  font-size: 3rem;
 }
 
 .container {
   margin: 0 auto;
+  margin-top: 100px;
   padding: 0;
-  width: 1200px;
+  width: 1080px;
   max-width: 100%;
-  border: 2px dashed orange
-;
+  border: 2px dashed orange;
+}
+
+img[alt="Jumbo"] {
+  width: 900px;
+}
+p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  margin-right: 12px;
 }
 
 h1 {
-  text-align: center;
+  text-align: left;
 
-}
-.container-xl
-{
-  padding-top:40px;
-  justify-content: center;
-  width: 1400px;
-  background-color: aqua;
+  font-size: 6rem;
+  margin-bottom: 50px;
 }
 
-.container-xlb
-{
+h3 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+.container-xl {
+  width: 1200px;
+  padding-top: 00px;
+  position: relative;
+  top: 100px;
+}
+.jumbo {
+  background-color: cyan;
+}
+
+.container-xlb {
   display: flex;
-  padding-top:40px;
+  padding-top: 40px;
   justify-content: space-between;
-  width: 1400px;
+  width: 1200px;
   background-color: gray;
 }
-.page-header .link-start{
- text-align: left;
+.page-header .link-start {
+  text-align: left;
   padding-left: 10px;
   border: 2px dashed orange;
 }
 
-.page-header ul
-{display: inline-block;}
+.page-header ul {
+  display: inline-block;
+}
 
 .page-header .header-start ul {
-display: inline-block;
+  display: inline-block;
   gap: 20px;
   list-style: none;
   margin: 0;
@@ -69,7 +173,6 @@ display: inline-block;
   align-items: center;
 }
 
-
 .page-header .link-end {
   padding-right: 10px;
   border: 2px dashed red;
@@ -82,7 +185,6 @@ display: inline-block;
   margin: 0;
   padding: 0;
   justify-content: flex-end;
-
 }
 .col-20 {
   width: 20%;
@@ -92,10 +194,15 @@ display: inline-block;
 .col-30 {
   width: 30%;
   border: 1px dashed blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .col-40 {
   width: 40%;
+  padding: 40px;
   border: 1px dashed blue;
 }
 
@@ -103,11 +210,12 @@ display: inline-block;
   width: 60%;
   border: 1px dashed blue;
 }
-.col-70
-{
+.col-70 {
+  margin-left: 0;
   width: 70%;
   border: 1px dashed blue;
 }
+
 .gallery .top-card-container {
   display: flex;
   flex-direction: row;
@@ -118,12 +226,12 @@ display: inline-block;
   flex-direction: row;
   justify-content: space-between;
 }
- .plans {
-  margin:0 auto;
+.plans {
+  margin: 0 auto;
   padding-top: 80px;
   width: 1200px;
   max-width: 100%;
- }
+}
 .gallery {
   margin: 0 0;
   width: 1200px;
@@ -132,32 +240,49 @@ display: inline-block;
 }
 .card {
   width: calc(100% / 3 - 20px);
-ì
-  height: 600px;
-  position: relative;
-  border: 1px dashed brown;
-
 }
-
+img[alt="IMG"] {
+  width: 70px;
+}
 .big-card {
   width: 100%;
   height: 300px;
   margin-top: 30px;
   border: 1px dashed brown;
-
-
-
 }
- .card .title-card {
+.bottom-card {
+  width: calc(100% / 3 - 20px);
+}
+
+.bottom-card-container {
+  width: 1080px;
+  border: 2px dashed green;
+}
+.card .title-card {
   width: 100%;
   height: 50px;
   position: relative;
   margin: 0;
   border: 1px dashed brown;
+}
+.findpartner {
+  padding: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: fit-content;
+  font-size: 1.2rem;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 1px solid black;
+}
+img[alt="Partner"] {
+  width: 640px;
+}
+.card-big-title {
+  font-size: 2rem;
+}
 
- }
-
-
- .footer {
+.footer {
   height: 500px;
-  background-color: gray;}
+  background-color: gray;
+}
