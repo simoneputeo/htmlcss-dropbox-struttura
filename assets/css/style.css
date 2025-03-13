@@ -4,70 +4,58 @@
   padding: 0;
 }
 
-img {
-    max-width: 100%;
-}
 
-.top-header .container {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  padding: 0 0;
-}
 
 .page-header {
   height: 500px;
   display: flex;
-  flex-direction: column;
   border: 2px dashed green;
 }
 
-.top-header {
-  height: 100px;
+.row
+{display: flex;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+  max-width: 100%;
+  border: 2px dashed orange
+;
+}
+
+h1 {
+  text-align: center;
+
+}
+.container-xl
+{
+  padding-top:40px;
+  justify-content: center;
+  width: 1400px;
+  background-color: aqua;
+}
+
+.container-xlb
+{
   display: flex;
-  flex-direction: row;
-  border: 2px dashed orange;
-
+  padding-top:40px;
+  justify-content: space-between;
+  width: 1400px;
+  background-color: gray;
 }
-
-
-.page-header .container {
-  display: flex;
-  align-items: center;
-}
-
-.page-header .header-item {
-  padding-top: 20px;
-  padding-bottom: 20px;
-padding-left: 0;
-
-  background-color: #d2a741;
-  border: 2px dashed black;
-}
-.page-header .logo-container {
-  padding-left: 20px;
-  padding-right: 50px;
-  max-width: 500px;
-  color: white;
-  border: 2px dashed blue;
-}
-
-.page-header .link-container {
-  flex-basis:80%;
-  display: flex;
-  flex-direction: row;
-
-}
-.page-header .link-container-start{
-  text-align: left;
+.page-header .link-start{
+ text-align: left;
   padding-left: 10px;
-  color: white;
-  display: flex;
-  padding-right: 300px;
+  border: 2px dashed orange;
 }
 
-.page-header .link-container-start ul {
-  display: flex;
+.page-header ul
+{display: inline-block;}
+
+.page-header .header-start ul {
+display: inline-block;
   gap: 20px;
   list-style: none;
   margin: 0;
@@ -75,26 +63,20 @@ padding-left: 0;
   justify-content: flex-start;
 }
 
-.page-header .link-container-start li {
+.page-header .header-start li {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
 
-img[alt="Logo Boolean"] {width: 400px;
-}
-
-.page-header .link-container-end {
-  padding-left: 300px;
-  display: inline block;
-  color: white;
+.page-header .link-end {
   padding-right: 10px;
+  border: 2px dashed red;
 }
 
-.page-header .link-container-end ul {
-  display: flex;
-  flex-direction: row;
+.page-header .header-end ul {
+  display: inline-block;
   gap: 20px;
   list-style: none;
   margin: 0;
@@ -102,30 +84,39 @@ img[alt="Logo Boolean"] {width: 400px;
   justify-content: flex-end;
 
 }
-
-.bottom-header {
-  padding: 40px 0;
- background-image: "../img/jumbo.png";
-  background-color: #000085;
-  border: 2px dashed black;
+.col-20 {
+  width: 20%;
+  border: 1px dashed blue;
 }
 
-.bottom-header > .container {
-  background-color: #E087E8;
-  margin: auto;
-  min-height: 400px;
-  display: flex;
-  flex-direction: row;
-  width: 800px;
-justify-content: center;
-align-self: center;
-  border: 1px dashed black;
+.col-30 {
+  width: 30%;
+  border: 1px dashed blue;
 }
 
+.col-40 {
+  width: 40%;
+  border: 1px dashed blue;
+}
+
+.col-60 {
+  width: 60%;
+  border: 1px dashed blue;
+}
+.col-70
+{
+  width: 70%;
+  border: 1px dashed blue;
+}
 .gallery .top-card-container {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-between;
+}
+.gallery .bottom-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
  .plans {
   margin:0 auto;
@@ -134,16 +125,28 @@ align-self: center;
   max-width: 100%;
  }
 .gallery {
-  margin: 0 auto;
+  margin: 0 0;
   width: 1200px;
   max-width: 100%;
+  border: 3px dashed darkblue;
 }
 .card {
   width: calc(100% / 3 - 20px);
+ì
   height: 600px;
   position: relative;
-  margin: 10px;
   border: 1px dashed brown;
+
+}
+
+.big-card {
+  width: 100%;
+  height: 300px;
+  margin-top: 30px;
+  border: 1px dashed brown;
+
+
+
 }
  .card .title-card {
   width: 100%;
@@ -153,3 +156,8 @@ align-self: center;
   border: 1px dashed brown;
 
  }
+
+
+ .footer {
+  height: 500px;
+  background-color: gray;}
