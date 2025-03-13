@@ -19,7 +19,7 @@ a {
 }
 
 .img-fluid {
-  max-width: calc(100% / 3);
+  max-width: 100%;
 }
 
 .contactus {
@@ -140,7 +140,7 @@ h3 {
 .jumbo {
   background-color: cyan;
 }
-
+img[alt*="IMG"]{max-width: 100% ;}
 .container-xlb {
   display: flex;
   padding-top: 40px;
@@ -241,9 +241,7 @@ h3 {
 .card {
   width: calc(100% / 3 - 20px);
 }
-img[alt="IMG"] {
-  width: 70px;
-}
+
 .big-card {
   width: 100%;
   height: 300px;
@@ -251,17 +249,17 @@ img[alt="IMG"] {
   border: 1px dashed brown;
 }
 .bottom-card {
-  width: calc(100% / 3 - 20px);
+  width: calc(100% / 3 - 10px);
 }
 
 .bottom-card-container {
+  display: flex;
   width: 1080px;
   border: 2px dashed green;
 }
 .card .title-card {
   width: 100%;
   height: 50px;
-  position: relative;
   margin: 0;
   border: 1px dashed brown;
 }
