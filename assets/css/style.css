@@ -6,16 +6,43 @@
 
 a {
   text-decoration: none;
+  color: unset;
+}
+.page-header {
+padding-left: 0.5rem;
+padding-right: 0.5rem;
+  display: flex;
+  justify-content:space-between;
+  position:sticky;
+  top: 0;
 }
 
-.page-header {
-  height: 500px;
-  display: flex;
-  border: 2px dashed green;
+.page-header li {
+  display: inline-block;
+  padding: 20px;
+vertical-align: middle;
+font-size: 1.1rem;
 }
+
+.start {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  background-color: #0062FE;}
+
+
+
+
+
+
+
+
 
 .row {
   display: flex;
+  flex-direction: row;
 }
 
 .img-fluid {
@@ -26,7 +53,7 @@ a {
   padding: 12px;
   padding-left: 90px;
   padding-right: 90px;
-  background-color: cornflowerblue;
+  background-color: 0062FE;
   width: fit-content;
   font-size: 1.2rem;
   color: white;
@@ -40,12 +67,12 @@ a {
   padding: 12px;
   padding-left: 50px;
   padding-right: 50px;
-  background-color: cornflowerblue;
+  background-color: 0062FE;
   width: fit-content;
   font-size: 1.2rem;
   color: white;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 40px;
+  margin-bottom: 170px;
 }
 
 .user-card {
@@ -55,24 +82,31 @@ a {
 }
 .title-card {
   padding: 10px;
-  border: 1px solid grey;
+  border-bottom: 1px solid grey;
   text-align: center;
 }
 
-.big-card {
-  padding: 30px;
-  border: 1px solid grey;
-}
 
 .upper-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-left: 30px;
   padding-right: 30px;
-  margin: 2px solid grey;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  min-height: 280px;
 }
 .lower-card {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
   padding-left: 30px;
   padding-right: 30px;
-  margin: 2px solid grey;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  min-height: 400px;
 }
 .card-name {
   font-size: 1.7rem;
@@ -89,7 +123,7 @@ a {
   padding: 12px;
   padding-left: 30px;
   padding-right: 30px;
-  background-color: cornflowerblue;
+  background-color: 0062FE;
   width: fit-content;
   font-size: 1.2rem;
   color: white;
@@ -100,6 +134,7 @@ a {
 .arrow {
   padding-top: 20px;
   font-size: 3rem;
+  padding-bottom: 100px;
 }
 
 .container {
@@ -108,7 +143,6 @@ a {
   padding: 0;
   width: 1080px;
   max-width: 100%;
-  border: 2px dashed orange;
 }
 
 img[alt="Jumbo"] {
@@ -127,18 +161,26 @@ h1 {
   margin-bottom: 50px;
 }
 
+h2 {padding-top: 50px;
+  font-size: 3.1rem;
+padding-bottom: 40px;}
+
 h3 {
   font-size: 2rem;
   margin-bottom: 25px;
 }
+
+h4 {font-size: 1.2rem;
+color: white;
+padding-top: 50px;}
+
 .container-xl {
   width: 1200px;
-  padding-top: 00px;
   position: relative;
   top: 100px;
 }
 .jumbo {
-  background-color: cyan;
+  background-color: #B4D0E7;
 }
 img[alt*="IMG"]{max-width: 100% ;}
 .container-xlb {
@@ -146,74 +188,34 @@ img[alt*="IMG"]{max-width: 100% ;}
   padding-top: 40px;
   justify-content: space-between;
   width: 1200px;
-  background-color: gray;
-}
-.page-header .link-start {
-  text-align: left;
-  padding-left: 10px;
-  border: 2px dashed orange;
+  background-color: black;
 }
 
-.page-header ul {
-  display: inline-block;
-}
-
-.page-header .header-start ul {
-  display: inline-block;
-  gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  justify-content: flex-start;
-}
-
-.page-header .header-start li {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.page-header .link-end {
-  padding-right: 10px;
-  border: 2px dashed red;
-}
-
-.page-header .header-end ul {
-  display: inline-block;
-  gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  justify-content: flex-end;
+.col-15 {width: 15%;
 }
 .col-20 {
   width: 20%;
-  border: 1px dashed blue;
 }
 
 .col-30 {
   width: 30%;
-  border: 1px dashed blue;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 100px;
 }
 
 .col-40 {
   width: 40%;
   padding: 40px;
-  border: 1px dashed blue;
 }
 
 .col-60 {
   width: 60%;
-  border: 1px dashed blue;
 }
 .col-70 {
   margin-left: 0;
   width: 70%;
-  border: 1px dashed blue;
+ 
 }
 
 .gallery .top-card-container {
@@ -223,6 +225,7 @@ img[alt*="IMG"]{max-width: 100% ;}
 }
 .gallery .bottom-card-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -236,7 +239,6 @@ img[alt*="IMG"]{max-width: 100% ;}
   margin: 0 0;
   width: 1200px;
   max-width: 100%;
-  border: 3px dashed darkblue;
 }
 .card {
   width: calc(100% / 3 - 20px);
@@ -246,22 +248,23 @@ img[alt*="IMG"]{max-width: 100% ;}
   width: 100%;
   height: 300px;
   margin-top: 30px;
-  border: 1px dashed brown;
+  margin-bottom: 100px;
+  border: 1px solid grey;
+
 }
 .bottom-card {
   width: calc(100% / 3 - 10px);
+  padding-bottom: 40px;
 }
 
 .bottom-card-container {
   display: flex;
   width: 1080px;
-  border: 2px dashed green;
 }
 .card .title-card {
   width: 100%;
   height: 50px;
   margin: 0;
-  border: 1px dashed brown;
 }
 .findpartner {
   padding: 12px;
@@ -278,9 +281,64 @@ img[alt="Partner"] {
 }
 .card-big-title {
   font-size: 2rem;
+  font-weight: 550;
+  padding-bottom: 25px;
 }
 
-.footer {
-  height: 500px;
-  background-color: gray;
+.big-card-copy {
+  padding-left: 20px;
 }
+.card-copy {
+  font-size: 1.2rem;
+}
+.card-body {
+}
+
+
+.lower-card > .buy-now {
+  padding-bottom: 20px;
+} 
+
+.lower-card  .highlights-title {
+  padding-bottom: 20px;
+  font-weight: 800;
+}
+
+.lower-card .highlights {padding-bottom: 20px;}
+
+.card-contact {font-weight: 600;
+  padding-bottom: 40px;
+  padding-left:20px;
+}
+
+.big-card-name {font-size: 2rem;
+  font-weight: 600;
+padding-left: 20px;
+padding-top: 40px;
+padding-bottom: 25px;}
+
+footer {
+  background-color: black;
+}
+
+li {list-style: none;}
+
+{
+x}
+
+.footer-link ul {
+  margin-top: 15px;
+  padding-bottom: 80px;
+
+}
+
+.footer-link li{
+  margin-top: 8px;
+
+  color: white;
+}
+
+.lang {
+
+}
+
